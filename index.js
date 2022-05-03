@@ -36,12 +36,12 @@ function output(input) {
   } else if (index == 4 && text.length > 0 && numbers.includes(text)) {
     localStorage.setItem("sad1", input)
     product = questions[index];
-    addChat(input, product);
+    askMoodItems(input, product);
     index += 1;
   } else if (index == 5 && text.length > 0 && numbers.includes(text)) {
     localStorage.setItem("anxious1", input)
     product = questions[index];
-    askMoodItems(input, product);
+    addChat(input, product);
     index += 1;
   } else if (index == 6 && text.length > 0 && numbers.includes(text)) {
     localStorage.setItem("angry2", input)
@@ -51,7 +51,7 @@ function output(input) {
   } else if (index == 7 && text.length > 0 && numbers.includes(text)) {
     localStorage.setItem("happy2", input)
     product = questions[index];
-    addChat(input, product);
+    askMoodItems(input, product);
     index += 1;
   } else if (index == 8 && text.length > 0 && numbers.includes(text)) {
     localStorage.setItem("anxious2", input)
@@ -127,7 +127,7 @@ function output(input) {
     let reappraisal = reappraisal1 + reappraisal2;
     let lifesatisfaction = lifesatisfaction1 + lifesatisfaction2;
 
-    product = "Your portfolio is ready:\n" + "Overall Life Satisfaction: " + lifesatisfaction + " out of 14;" + "\nMeaningfulness: " + meaningful + " out of 7;" + "\nMood Index: " + moodindex + " out of 6;" + "\nMindfulness: " + mindfulness + " out of 14;" + "\Present Moment Awareness: " + decentering + " out of 14;" + "\nPositive Thinking: " + reappraisal + " out of 14;" + "\nType 'next' to proceed."
+    product = "Your portfolio is ready:\n" + "Overall Life Satisfaction: " + lifesatisfaction + " out of 14;" + "\nMeaningfulness: " + meaningful + " out of 7;" + "\nMood Index: " + moodindex + " out of 6;" + "\nMindfulness: " + mindfulness + " out of 14;" + "\nPresent Moment Awareness: " + decentering + " out of 14;" + "\nPositive Thinking: " + reappraisal + " out of 14;" + "\nType 'next' to proceed."
     botTalk(input, product);
     index += 1;
 
@@ -275,7 +275,7 @@ function askMeaningful(input, product) {
 
   // Fake delay to seem "real"
   setTimeout(() => {
-    messagesContainer.appendChild(scaleImg)}, 4000)
+    messagesContainer.appendChild(scaleImg)}, 2000)
 
   // Keep messages at most recent
   messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
@@ -367,10 +367,13 @@ function askThought_w_pic(input, product) {
   userDiv.innerHTML = `<img src="user.png" class="avatar"><span>${input}</span>`;
   messagesContainer.appendChild(userDiv);
 
+  messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.offsetHeight
+
   let thoughtImg = document.createElement("img");
   thoughtImg.src = "disagree_agree.png";
   thoughtImg.className = "scale";
   messagesContainer.appendChild(thoughtImg)
+  messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.offsetHeight
 
   let botDiv = document.createElement("div");
   let botImg = document.createElement("img");
@@ -384,8 +387,7 @@ function askThought_w_pic(input, product) {
   botDiv.appendChild(botImg);
   messagesContainer.appendChild(botDiv);
 
-  messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.offsetHeight
-  
+
   // Fake delay to seem "real"
   setTimeout(() => {
     botText.innerText = `${product}`;
@@ -394,7 +396,7 @@ function askThought_w_pic(input, product) {
 
   // Keep messages at most recent
   setTimeout(() => {
-    messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.offsetHeight}, 2000)
+    messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.offsetHeight}, 10)
 }
 
 

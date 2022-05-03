@@ -11,7 +11,7 @@ const done = ["done"]
 // ordered questions
 questions = [
   ["Excellent!\n\nHow meaningful does your life feel now?\n (Type NUMBER only)"], //0 meaningful
-  ["How much did you experience the following feelings in the past 24 hours?\nI felt happy."], //1 happy 1
+  ["How much did you experience the following feelings in the past 24 hours?\n\nI felt happy."], //1 happy 1
   ["I felt angry."], //2 angry 1
   ["I felt depressed."], //3 sad 1
   ["I felt anxious."], //4 anxious 1
