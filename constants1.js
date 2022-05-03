@@ -31,7 +31,7 @@ questions = [
   [""], //18
   [""], //19
   [""], //20
-  ["Please write done some of your thoughts after this brief excercise. E.G., I felt calm; I could better focus on my task now..."], //21
-  ["How would you rate your overall interaction experience with me? (1-Horrible  -- 10-Excellent!)"],//22
+  ["Please write done some of your thoughts after this brief excercise. E.G., I felt calm; I can better focus on my task now..."], //21
+  ["How would you rate your overall interaction with me? (1-Horrible  -- 10-Excellent!)"],//22
   ["Nice talking to you too!", "I really enjoyed our conversation too!", "Thank you! I'm very flattered."], //23
 ]

@@ -170,7 +170,7 @@ function output(input) {
       //randomly select one to end the conversaiton
       product = questions[index][Math.floor(Math.random() * questions[index].length)] + "\nPlease leave some comments for my future improvements :)";
     } else if (rating < 7){
-      product = "I'm sorry that your interaction with me was not as good as I thought. Please leave some feedback so I could improve in the future."
+      product = "I'm sorry that your interaction with me was not as good as I had hoped. Please leave some feedback so I could improve in the future."
     }
     addChat(input, product);
     index += 1;
