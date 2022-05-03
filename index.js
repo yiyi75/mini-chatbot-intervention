@@ -105,7 +105,7 @@ function output(input) {
     text = "Type 'next' to proceed."
     setTimeout(() => {
         chatbot_introduce(text)
-      }, 8000)
+      }, 7500)
     index += 1;
 } else if (index == 18 && text.length > 0 && next.includes(text)) {
     let happy1 = Number(localStorage.getItem("happy1"));
@@ -136,7 +136,7 @@ function output(input) {
     text = "Type 'done' to proceed."
     setTimeout(() => {
         chatbot_introduce(text)
-      }, 23000)
+      }, 21000)
     index += 1;
 
   } else if (index == 19 && text.length > 0 && done.includes(text)) {
