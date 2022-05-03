@@ -11,7 +11,7 @@ const done = ["done"]
 // ordered questions
 questions = [
   ["Excellent!\n\nHow meaningful does your life feel now?\n (Type NUMBER only)"], //0 meaningful
-  ["How much did you experience the following feelings in the past 24 hours?\n\nI felt happy."], //1 happy 1
+  ["How much did you experience the following feelings in the past 24 hours? (Type NUMBER only)\n\nI felt happy."], //1 happy 1
   ["I felt angry."], //2 angry 1
   ["I felt depressed."], //3 sad 1
   ["I felt anxious."], //4 anxious 1
@@ -19,7 +19,7 @@ questions = [
   ["I felt cheerful."], //6 happy 2
   ["I felt worried."], //7 anxious 2
   ["I felt sad."], //8 sad 2
-  ["I can find words to describe my feelings right now."],//9 Mindfulness1
+  ["Below are a list of statements concerned with your thoughts and experiences. (Type NUMBER only)\n\nI can find words to describe my feelings right now."],//9 Mindfulness1
   ["I am daydreaming, worrying, or otherwise distracted."], //10 mindfulness 2
   ["I can watch my thoughts and emotions come and go like clouds."], //11 decentering 1
   ["My sense of self was separate from my changing thoughts and feelings."], //12 decentering 2
