@@ -384,15 +384,17 @@ function askThought_w_pic(input, product) {
   botDiv.appendChild(botImg);
   messagesContainer.appendChild(botDiv);
 
+  messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.offsetHeight
+  
   // Fake delay to seem "real"
   setTimeout(() => {
     botText.innerText = `${product}`;
     textToSpeech(product)
-  }, 1500)
+  }, 2000)
 
   // Keep messages at most recent
   setTimeout(() => {
-    messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.offsetHeight}, 1500)
+    messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.offsetHeight}, 2000)
 }
 
 
