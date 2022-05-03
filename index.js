@@ -367,13 +367,10 @@ function askThought_w_pic(input, product) {
   userDiv.innerHTML = `<img src="user.png" class="avatar"><span>${input}</span>`;
   messagesContainer.appendChild(userDiv);
 
-  messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.offsetHeight
-
   let thoughtImg = document.createElement("img");
   thoughtImg.src = "disagree_agree.png";
   thoughtImg.className = "scale";
   messagesContainer.appendChild(thoughtImg)
-  messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.offsetHeight
 
   let botDiv = document.createElement("div");
   let botImg = document.createElement("img");
