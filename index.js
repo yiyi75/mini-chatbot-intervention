@@ -131,12 +131,12 @@ function output(input) {
     let reappraisal = reappraisal1 + reappraisal2;
     let lifesatisfaction = lifesatisfaction1 + lifesatisfaction2;
 
-    product = "Your portfolio is ready:\n" + "Overall Life Satisfaction: " + lifesatisfaction + " out of 14;" + "\nMeaningfulness: " + meaningful + " out of 7;" + "\nMood Index: " + moodindex + " out of 6;" + "\nMindfulness: " + mindfulness + " out of 14;" + "\nPresent Moment Awareness: " + decentering + " out of 14;" + "\nPositive Thinking: " + reappraisal + " out of 14;"
+    product = "Your portfolio is ready:\n" + "Overall Life Satisfaction: " + lifesatisfaction + " out of 14;" + "\nMeaningfulness: " + meaningful + " out of 7;" + "\nMood Index: " + moodindex + " out of 6;" + "\nMindfulness: " + mindfulness + " out of 14;" + "\nPresent Moment Awareness: " + decentering + " out of 14;" + "\nPositive Thinking: " + reappraisal + " out of 14"
     botTalk(input, product);
     text = "Type 'done' to proceed."
     setTimeout(() => {
         chatbot_introduce(text)
-      }, 21000)
+      }, 20000)
     index += 1;
 
   } else if (index == 19 && text.length > 0 && done.includes(text)) {
